@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Muhammad Muneeb
+Assignment Seven
+ -->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 6 create multiplication table</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Home Work Seven with jQuery</h1>
+    <form id="form" novalidate>
+      <!--
+      fieldset for the form
+       -->
+       <fieldset>
+           <legend>Horizontal (Multiplier)</legend>
+           <div>
+               <label for="multiplierMin">Minimum</label>
+               <input type="number" name="multiplierMin" value="1" autocomplete="off">
+           </div>
+
+           <div>
+               <label for="multiplierMax">Maximum</label>
+               <input type="number" name="multiplierMax" value="4" autocomplete="off">
+           </div>
+           <div id="multiplierError"></div>
+       </fieldset>
+
+       <fieldset>
+           <legend>Vertical (Multiplicand)</legend>
+           <div>
+               <label for="multiplicandMin">Minimum</label>
+               <input type="number" name="multiplicandMin" value="1"autocomplete="off">
+           </div>
+
+           <div>
+               <label for="multiplicandMax">Maximum</label>
+               <input type="number" name="multiplicandMax" value="5"autocomplete="off">
+           </div>
+           <div id="multiplicandError"></div>
+       </fieldset>
+        <!-- submit Button -->
+        <input type="submit" value="Create">
+    </form>
+  </body>
+</html>
